@@ -1,0 +1,17 @@
+﻿@model PracticeCRUDApp.Models.DTO.PRoductDto
+<div>
+    <form method="post" asp-action="CreteProduct" asp-controller="Product">
+        <input type="hidden" asp-for="Id" />
+    <lable>Product Name</lable>
+    <input type="text" asp-for="Name" />
+    <label>Product Price</label>
+        <input type="number" asp-for="Price" />
+        <label>Product Type</label>
+        <select>
+            <option value="1">mobile</option>
+            <option value="2">Laptop</option>
+            <option value="3">Tablet </option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</div>
